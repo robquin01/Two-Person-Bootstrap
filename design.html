@@ -5,52 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap VCS Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/design.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header class="bg-dark text-white text-center py-3">
-        <h1>Our Bootstrap Site</h1>
-    </header>
-
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                     <li class="nav-item"><a class="nav-link" href="content2.html">Content 2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="content3.html">Content 3</a></li>
-                    <li class="nav-item"><a class="nav-link" href="content4.html">Content 4</a></li>
-                    <li class="nav-item"><a class="nav-link" href="design.html">Design Discussion</a></li>
-                </ul>
+    <div class="container py-1"> <!-- Ensures that all content is within a centered container -->
+        <!-- HEADER / NAVIGATION -->
+        <header class="bg-dark text-white text-center py-1">
+            <h1>Our Bootstrap Site</h1>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="cover.html">Home</a>
+                <a class="nav-link" href="content2.html">Content2</a>
+                <a class="nav-link" href="content3.html">Content3</a>
+                <a class="nav-link" href="content4.html">Content4</a>
+                <a class="nav-link active" href="design.html">Design</a>
+            </nav>
+        </header>
+        <!-- MAIN CONTENT -->
+        <div class="text-center my-4">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h2>Welcome to Our Bootstrap Project</h2>
+                    <p>The following will cover the layout and design of our site.</p>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <!-- MAIN CONTENT -->
-    <div class="container my-4">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Welcome to Our Bootstrap Project</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna eu nunc luctus ultricies.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="img/sample.jpg" alt="Sample Image" class="img-fluid">
-            </div>
-        </div>
+        <!-- FOOTER -->
+        <footer class="bg-dark text-white text-center justify-content-center py-3">
+            <p>Robert Quinlivan & Jeremy Thachaeden</p>
+        </footer>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>Robert Quinlivan & Jeremy Thachaeden</p>
-    </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
