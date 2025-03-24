@@ -1,0 +1,46 @@
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+/* Additional page-specific styles as needed */
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+.cover-heading {
+    width: 100%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;  /* Stacks children vertically */
+  align-items: center;     /* Center items horizontally */
+  justify-content: space-between; /* Space between items vertically */
+  width: 100%;             /* Full width of the container */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content in the container */
+  align-items: center; /* Horizontally centers content in the container */
+  text-align: center; /* Ensures text within is centered as well */
+  flex: 1; /* Takes up all available space */
+  padding: 2em;
+}
+
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}

@@ -1,0 +1,43 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 1300px;
+  padding: 20px;
+}
+
+.pricing-header {
+  justify-content: center;
+  align-content: center;
+  max-width: 1200px;
+}
+
+.card-deck .card {
+  display: flex;
+  float: left;
+  align-items: center;
+  margin: 1em;
+  min-width: 320px;
+}
+.inner {
+  display: flex;
+  flex-direction: column;  /* Stacks children vertically */
+  align-items: center;     /* Center items horizontally */
+  justify-content: space-between; /* Space between items vertically */
+  width: 100%;             /* Full width of the container */
+}
+p {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

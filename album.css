@@ -1,12 +1,13 @@
 :root {
-    --jumbotron-padding-y: 3rem;
+    --jumbotron-padding-y: 1rem;
   }
   
   .jumbotron {
     padding-top: var(--jumbotron-padding-y);
     padding-bottom: var(--jumbotron-padding-y);
     margin-bottom: 0;
-    background-color: #fff;
+    background: linear-gradient(to bottom, white, rgb(236, 234, 234), rgb(153, 152, 152));
+    background-color: #dddadaef;
   }
   @media (min-width: 768px) {
     .jumbotron {
@@ -26,14 +27,20 @@
   .jumbotron .container {
     max-width: 40rem;
   }
-  
-  footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  img {
+    display: block; /* Makes the image block level to accept margin and padding */
+    margin: 0 auto; /* Centers the image horizontally */
+    border-radius: 5px; /* Gives the image rounded corners */
+    max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  /* Ensure full width*/
   }
   
-  footer p {
-    margin-bottom: .25rem;
-  }
-  
-  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow { 
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+}
