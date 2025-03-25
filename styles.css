@@ -30,6 +30,9 @@ header {
     padding-right: 25px;
     width: 100%;
 }
+.header-masthead {
+    height: 100px;
+}
 
 h3 {
     color: #fff;
